@@ -66,7 +66,7 @@ fn load_passwords_from_file(filename: &str) -> Result<Vec<PasswordWithPolicy>, i
         .collect())
 }
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let passwords = load_passwords_from_file("day-02/input.txt")?;
+    let passwords = load_passwords_from_file("inputs/day-02.txt")?;
     let number_of_valid_passwords = passwords.iter().filter(|p| p.is_valid1()).count();
     println!(
         "{} of {} passwords are valid according to first policy scheme.",

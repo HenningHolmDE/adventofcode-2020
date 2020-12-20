@@ -65,7 +65,7 @@ fn part2(jolts: &Vec<u32>) {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let numbers = load_numbers_from_file("day-10/input.txt")?;
+    let numbers = load_numbers_from_file("inputs/day-10.txt")?;
     let jolts = numbers_to_jolts(numbers);
     part1(&jolts);
     part2(&jolts);

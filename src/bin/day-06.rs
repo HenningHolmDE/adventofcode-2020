@@ -61,7 +61,7 @@ fn load_groups_from_file(filename: &str) -> Result<Vec<Group>, io::Error> {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let groups = load_groups_from_file("day-06/input.txt")?;
+    let groups = load_groups_from_file("inputs/day-06.txt")?;
     let number_of_questions: usize = groups.iter().map(|g| g.number_of_questions_anyone()).sum();
     println!(
         "Number of questions ANYONE in a group answered: {}",

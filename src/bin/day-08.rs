@@ -135,7 +135,7 @@ fn part2(program: Program) {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let program = load_program_from_file("day-08/input.txt")?;
+    let program = load_program_from_file("inputs/day-08.txt")?;
     part1(program.clone());
     part2(program);
     Ok(())

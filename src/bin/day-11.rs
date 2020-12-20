@@ -187,7 +187,7 @@ fn part2(grid: &Grid) {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let grid = load_grid_from_file("day-11/input.txt")?;
+    let grid = load_grid_from_file("inputs/day-11.txt")?;
     part1(&grid);
     part2(&grid);
     Ok(())

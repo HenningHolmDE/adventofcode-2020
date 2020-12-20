@@ -51,7 +51,7 @@ impl std::fmt::Display for Slope {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let map = load_map_from_file("day-03/input.txt")?;
+    let map = load_map_from_file("inputs/day-03.txt")?;
     let slopes = vec![
         Slope::new(1, 1),
         Slope::new(3, 1),

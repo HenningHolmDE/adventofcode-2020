@@ -39,7 +39,7 @@ fn part2(numbers: &[u32]) {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let numbers = load_numbers_from_file("day-01/input.txt")?;
+    let numbers = load_numbers_from_file("inputs/day-01.txt")?;
     part1(&numbers);
     part2(&numbers);
     Ok(())

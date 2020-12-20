@@ -65,7 +65,7 @@ fn part2(numbers: &Vec<u64>, index_p1: usize) {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let numbers = load_numbers_from_file("day-09/input.txt")?;
+    let numbers = load_numbers_from_file("inputs/day-09.txt")?;
     println!("Number of numbers: {}", numbers.len());
     let index_p1 = part1(&numbers).unwrap();
     part2(&numbers, index_p1);

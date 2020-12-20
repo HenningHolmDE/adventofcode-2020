@@ -102,7 +102,7 @@ fn count_contents(rules: &Vec<Rule>, bag_type: &str) -> u32 {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let rules = load_rules_from_file("day-07/input.txt")?;
+    let rules = load_rules_from_file("inputs/day-07.txt")?;
     println!(
         "Number of valid bags for a shiny gold bag: {}",
         find_containers(&rules, "shiny gold").len()

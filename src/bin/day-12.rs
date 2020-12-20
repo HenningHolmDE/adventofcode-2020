@@ -192,7 +192,7 @@ fn load_actions_from_file(filename: &str) -> Result<Vec<Action>, io::Error> {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let actions = load_actions_from_file("day-12/input.txt")?;
+    let actions = load_actions_from_file("inputs/day-12.txt")?;
 
     let mut ship = Ship::new();
     ship.handle_actions(&actions);

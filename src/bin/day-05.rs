@@ -52,7 +52,7 @@ fn find_my_seat(boarding_passes: &Vec<BoardingPass>) -> Option<u32> {
 }
 
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let boarding_passes = load_boarding_passes_from_file("day-05/input.txt")?;
+    let boarding_passes = load_boarding_passes_from_file("inputs/day-05.txt")?;
     println!(
         "Highest seat ID: {}",
         highest_seat_id(&boarding_passes).unwrap()

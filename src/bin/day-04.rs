@@ -146,7 +146,7 @@ fn load_passports_from_file(filename: &str) -> Result<Vec<Passport>, io::Error> 
     Ok(passports)
 }
 fn main() -> Result<(), Box<dyn std::error::Error>> {
-    let passports = load_passports_from_file("day-04/input.txt")?;
+    let passports = load_passports_from_file("inputs/day-04.txt")?;
     println!(
         "{} of {} passports are valid according to first validation scheme.",
         passports.iter().filter(|p| p.is_valid1()).count(),
