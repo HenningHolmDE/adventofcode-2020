@@ -8,6 +8,7 @@ edition = "2018"
 
 [dependencies]
 lazy_static = "1.4.0"
+num-integer = "0.1"
 regex = "1"
 
 [[bin]]
@@ -57,4 +58,8 @@ path = "src/bin/day-11.rs"
 [[bin]]
 name = "day-12"
 path = "src/bin/day-12.rs"
+
+[[bin]]
+name = "day-13"
+path = "src/bin/day-13.rs"
 
